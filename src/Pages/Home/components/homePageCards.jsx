@@ -1,9 +1,9 @@
 import React from 'react'
 import '../home.css'
 
-export const HomePageCards = ({id, img, price}) => {
+export const HomePageCards = ({ img, price}) => {
     return (
-        <div id={id} className="carousel-item w-[19rem] card mx-auto bg-gray-100 text-black hover:bg-blue-500 hover:text-white">
+        <div className="carousel-item w-[19rem] card mx-auto bg-gray-100 text-black hover:bg-blue-500 hover:text-white">
             <figure className="object-contain w-full h-[15rem] bg-white p-[3rem]">
                 <img className="bg-white" src={img} alt="Shoes" />
             </figure>

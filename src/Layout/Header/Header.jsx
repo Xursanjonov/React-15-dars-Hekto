@@ -8,7 +8,7 @@ export const Header = () => {
       <div className="header-top px-[8rem] py-2 flex items-center justify-between bg-violet-500 text-white">
         <ul className='flex items-center justify-center gap-4'>
           <li className='flex items-center justify-center gap-4'>
-            <i class="fa-regular fa-envelope text-lg"></i>
+            <i className="fa-regular fa-envelope text-lg"></i>
             <p>mhhasanul@gmail.com</p>
           </li>
           <li className='flex items-center justify-center gap-4'>

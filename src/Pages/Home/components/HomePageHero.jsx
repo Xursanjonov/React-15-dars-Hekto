@@ -6,8 +6,8 @@ import { Buttun } from '../../../Components/Buttun/buttun'
 
 export const HeroSliderItem = ({id, img}) => {
   return (
-    <div id={id} className="carousel-item relative w-full flex items-center justify-center">
-      <img className='w-[300px] absolute top-[-4rem] left-[-1rem]' src={chiroq} alt="" />
+    <div id={id} className="carousel-item pt-[8rem] relative w-full flex items-center justify-center">
+      <img className='w-[300px] absolute top-[0rem] left-[-1rem]' src={chiroq} alt="" />
       <div className='ps-[5rem]'>
         <p className='text-pink-500 font-semibold'>Best Furniture For Your Castle....</p>
         <h1 className="text-5xl font-bold w-[40rem] text-black">New Furniture Collection Trends in 2020</h1>
@@ -23,7 +23,7 @@ export const HeroSliderItem = ({id, img}) => {
 export const HomePageHero = () => {
   return (
     <main>
-      <div className="carousel w-full bg-purple-100 pt-[4rem]">
+      <div className="carousel w-full bg-purple-100 ">
         <HeroSliderItem id={'homeHero1'} img={stol} />
         <HeroSliderItem id={'homeHero2'} img={stol3} />
         <HeroSliderItem id={'homeHero3'} img={stol} />

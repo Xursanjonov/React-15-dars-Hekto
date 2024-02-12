@@ -1,15 +1,19 @@
 import React from "react"
-import { Header } from './Layout/Header/Header'
-import { Footer } from './Layout/Footer/Footer'
-import { Home } from "./Pages/Home/home"
+import { Route, Routes } from "react-router-dom"
+import { MainLayout } from './Layout/Main-layout'
+import { mainPages } from './Router/main-pages'
 
 function App() {
 
   return (
     <>
-      <Header />
-      <Home />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          {mainPages.map((item)=>(
+            <Route key={item.path} index={item.index} element={item.component} />
+          ))}
+        </Route>
+      </Routes>
     </>
   )
 }

@@ -9,6 +9,7 @@ import { Contact } from '../Pages/Contact/contact'
 export const mainPages = [
     {
         component: <Home />,
+        index: '/',
     },
     {
         component: <Pages />,

@@ -1,15 +1,24 @@
 import React from 'react'
 import { HomePageHero } from './components/HomePageHero'
 import { HomePageCards } from './components/homePageCards'
-import { data } from './components/data'
+import { data } from '../../Data/data'
 import shopex1 from '../../assets/Shopex/shopex-1.png'
 import shopex2 from '../../assets/Shopex/shopex-2.png'
 import shopex3 from '../../assets/Shopex/shopex-3.png'
 import shopex4 from '../../assets/Shopex/shopex-4.png'
 import { Shopex } from './components/shopex'
 import { Unique } from './components/Unique'
+import { Leatest } from './components/Leatest'
+import { NavLink } from 'react-router-dom'
+import tabCategory from '../../Router/productTabs'
+import { TrendingCard } from './components/TrendingCard'
 
 export const Home = () => {
+
+  const categoryClick = (e)=> {
+    e.preventDefault();
+
+  }
   return (
     <>
       <HomePageHero />
@@ -29,8 +38,19 @@ export const Home = () => {
           <a href="#13" className="w-[2.5rem] h-[.5rem] bg-pink-200 rounded-md"></a>
         </div>
       </section>
-      <section className='Leatest'>
-        <h1 className='text-center text-4xl pt-8 bg-white text-black font-bold'>Leatest Products</h1>
+      <section className='Leatest w-full'>
+        <h1 className='text-center text-4xl pt-8 bg-white text-blue-500 font-bold'>Leatest Products</h1>
+        <div className='py-5 font-semibold flex items-center justify-center gap-4 bg-white text-lg'>
+          {tabCategory?.map((item) => (
+            <NavLink onClick={categoryClick} to={`/${item.path}`} className='text-blue-500'>{item.name}</NavLink>
+          ))}
+        </div>
+        <ul className='carousel w-[100%] py-8 px-[8rem] bg-white grid grid-cols-3 gap-12'>
+          {data.map((item) => (
+            item.category == "NewArrival" ?
+              <Leatest key={item} url={item.url} text2={item.text2} price={item.price} sprice={item.sprice} /> : ''
+          ))}
+        </ul>
       </section>
       <section className='Shopex pt-14 bg-white'>
         <h1 className='text-center text-4xl py-4 text-black font-bold'>What Shopex Offer!</h1>
@@ -42,6 +62,17 @@ export const Home = () => {
         </div>
       </section>
       <Unique />
+      <section className='bg-white'>
+        <h1 className='text-center text-4xl py-8 bg-white text-blue-500 font-bold'>Trending Products</h1>
+        <div className="px-[5rem] grid grid-cols-4 items-center justify-center gap-5">
+          {/* {data?.map((item) => (
+            item.categoryName == "Trending Products" ? <TrendingCard key={item.id} url={item.url} title={item.title} price={item.price} sprice={item.sprice} /> : ''
+          ))} */}
+        </div>
+      </section>
+      <section className='Discount'>
+        <h1 className='text-center text-4xl py-8 bg-white text-blue-600 font-bold'>Discount Item</h1>
+      </section>
     </>
   )
 }
