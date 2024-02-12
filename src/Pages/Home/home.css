@@ -1,0 +1,18 @@
+.carousel-item {
+    box-shadow: 0 0 2px black;
+}
+.card:hover .card-icons-div {
+    display: flex;
+}
+.card:hover .card-btns {
+    display: flex;
+}
+.card:hover .span-blue-gold {
+    background-color: gold;
+}
+.card:hover h2 {
+    color: white;
+}
+.card-shopex:hover {
+    box-shadow: 0 0 8px gray;
+}
