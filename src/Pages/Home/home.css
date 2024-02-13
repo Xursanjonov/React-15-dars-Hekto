@@ -16,3 +16,24 @@
 .card-shopex:hover {
     box-shadow: 0 0 8px gray;
 }
+/* Top Categories */
+.topCategories .topCategoriesCard {
+    border-bottom: .3rem solid transparent;
+    border-left: .5rem solid transparent;
+}
+.topCategories:hover .topCategoriesCard {
+    border-bottom: .3rem solid blue;
+    border-left: .5rem solid blue;
+    transform: translateX(50deg);
+}
+.topCategories:hover .topCategoriesCard .btns {
+    display: block;
+}
+/* Leatest Blog */
+.leatestBlogCard:hover .leatestBlogCard-text {
+    color:  rgb(255, 0, 191);
+}
+.leatestBlogCard:hover .leatestBlogCard-btn {
+    color:  rgb(255, 0, 191);
+    border-color: rgb(255, 0, 191);
+}

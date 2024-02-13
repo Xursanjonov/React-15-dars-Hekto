@@ -18,6 +18,12 @@ import trending6 from "../assets/Trending/trending-6.png";
 import trending7 from "../assets/Trending/trending-7.png";
 import trending8 from "../assets/Trending/trending-8.png";
 import trending9 from "../assets/Trending/trending-9.png";
+import top1 from "../assets/Top-Categories/top-img1.png";
+import top2 from "../assets/Top-Categories/top-img2.png";
+import top3 from "../assets/Top-Categories/top-img3.png";
+import leatestBlog1 from "../assets/LeatestBlog/img-1.png";
+import leatestBlog2 from "../assets/LeatestBlog/img-2.png";
+import leatestBlog3 from "../assets/LeatestBlog/img-3.png";
 
 export const data = [
   {
@@ -386,8 +392,10 @@ export const data = [
   {
     id: 27,
     allCategory: "All",
-    categoryName: "Trending Products",
+    category: "Trending Products",
     title: "Cantilever chair",
+    text: "23% off in all products",
+    btn: "Shop Now",
     text2: "Comfort Handy Craft",
     price: 26.0,
     sprice: 42.0,
@@ -400,8 +408,10 @@ export const data = [
   {
     id: 28,
     allCategory: "All",
-    categoryName: "Trending Products",
+    category: "Trending Products",
     title: "Cantilever chair",
+    text: "23% off in all products",
+    btn: "View Collection",
     text2: "Comfort Handy Craft",
     price: 26.0,
     sprice: 42.0,
@@ -414,11 +424,12 @@ export const data = [
   {
     id: 29,
     allCategory: "All",
-    categoryName: "Trending Products",
+    categoryTwo: "Trending Products",
     title: "Cantilever chair",
+    text: "Executive Seat chair",
     text2: "Comfort Handy Craft",
     price: 26.0,
-    sprice: 42.0,
+    sprice: 32.0,
     url: trending7,
     rating: {
       rate: 3.9,
@@ -428,11 +439,12 @@ export const data = [
   {
     id: 30,
     allCategory: "All",
-    categoryName: "Trending Products",
+    categoryTwo: "Trending Products",
     title: "Cantilever chair",
+    text: "Executive Seat chair",
     text2: "Comfort Handy Craft",
     price: 26.0,
-    sprice: 42.0,
+    sprice: 32.0,
     url: trending8,
     rating: {
       rate: 3.9,
@@ -442,12 +454,115 @@ export const data = [
   {
     id: 31,
     allCategory: "All",
-    categoryName: "Trending Products",
+    categoryTwo: "Trending Products",
     title: "Cantilever chair",
+    text: "Executive Seat chair",
     text2: "Comfort Handy Craft",
     price: 26.0,
-    sprice: 42.0,
+    sprice: 32.0,
     url: trending9,
+    rating: {
+      rate: 3.9,
+      count: 120,
+    },
+  },
+  {
+    id: 32,
+    allCategory: "All",
+    category: "Top Categories",
+    products: [
+      {
+        id: 1,
+        title: "Mini LCW Chair",
+        price: 56.0,
+        sprice: 60.0,
+        url: top1,
+        rating: {
+          rate: 3.9,
+          count: 120,
+        },
+      },
+      {
+        id: 2,
+        title: "Mini LCW Chair",
+        price: 56.0,
+        sprice: 60.0,
+        url: top2,
+        rating: {
+          rate: 3.9,
+          count: 120,
+        },
+      },
+      {
+        id: 3,
+        title: "Mini LCW Chair",
+        price: 56.0,
+        sprice: 60.0,
+        url: top3,
+        rating: {
+          rate: 3.9,
+          count: 120,
+        },
+      },
+      {
+        id: 4,
+        title: "Mini LCW Chair",
+        price: 56.0,
+        sprice: 60.0,
+        url: top1,
+        rating: {
+          rate: 3.9,
+          count: 120,
+        },
+      },
+    ],
+  },
+  {
+    id: 33,
+    allCategory: "All",
+    category: "Leatest Blog",
+    name: "SaberAli",
+    date: "21 August,2020",
+    title: "Top esssential Trends in 2021",
+    text: "More off this less hello samlande lied much over tightly circa horse taped mightly",
+    btns: "Read More",
+    price: 26.0,
+    sprice: 32.0,
+    url: leatestBlog1,
+    rating: {
+      rate: 3.9,
+      count: 120,
+    },
+  },
+  {
+    id: 34,
+    allCategory: "All",
+    category: "Leatest Blog",
+    name: "Surfauxion",
+    date: "21 August,2020",
+    title: "Top esssential Trends in 2021",
+    text: "More off this less hello samlande lied much over tightly circa horse taped mightly",
+    btns: "Read More",
+    price: 26.0,
+    sprice: 32.0,
+    url: leatestBlog2,
+    rating: {
+      rate: 3.9,
+      count: 120,
+    },
+  },
+  {
+    id: 35,
+    allCategory: "All",
+    category: "Leatest Blog",
+    name: "SaberAli",
+    date: "21 August,2020",
+    title: "Top esssential Trends in 2021",
+    text: "More off this less hello samlande lied much over tightly circa horse taped mightly",
+    btns: "Read More",
+    price: 26.0,
+    sprice: 32.0,
+    url: leatestBlog3,
     rating: {
       rate: 3.9,
       count: 120,
