@@ -5,7 +5,7 @@ import { data } from '../../Data/data'
 import { Shopex } from './components/shopex'
 import { Unique } from './components/Unique'
 import { Leatest } from './components/Leatest'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import tabCategory from '../../Router/productTabs'
 import { TrendingCard } from './components/TrendingCard'
 import { CategoryTwo } from './components/CategoryTwo'
@@ -18,6 +18,7 @@ import shopex3 from '../../assets/Shopex/shopex-3.png'
 import shopex4 from '../../assets/Shopex/shopex-4.png'
 import hamkorlar from '../../assets/Home/homilar.png'
 import { LeatestBlogCard } from './components/LeatestBlogCard'
+import { nanoid } from 'nanoid'
 
 export const Home = () => {
 
@@ -72,7 +73,7 @@ export const Home = () => {
         <h1 className='text-center text-4xl py-8 bg-white text-blue-500 font-bold'>Trending Products</h1>
         <div className="py-[40px] flex items-center justify-center gap-[30px] bg-white">
           {data?.map((item) => (
-            item.categoryName == 'Trending Products' ? <TrendingCard url={item.url} title={item.title} price={item.price} sprice={item.sprice} /> : ''
+            item.categoryName == 'Trending Products' ? <TrendingCard key={item.id} url={item.url} title={item.title} price={item.price} sprice={item.sprice} /> : ''
           ))}
         </div>
         <div className="flex items-center justify-center gap-8">
@@ -97,7 +98,7 @@ export const Home = () => {
         <div className="w-full py-4 flex items-center justify-around bg-white">
           {data?.map((item) => (
             item.id = 32 ? item?.products?.map((product) => (
-              <TopCategories url={product.url} title={product.title} price={product.price} />
+              <TopCategories key={product.id} url={product.url} title={product.title} price={product.price} />
             )) : ''
           ))}
         </div>
